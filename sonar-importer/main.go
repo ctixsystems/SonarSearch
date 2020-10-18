@@ -90,7 +90,7 @@ func Output(collection *mongo.Collection, ch <-chan SonarResult) {
 }
 
 func main() {
-	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
+	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://mongoadmin:S3cret@mongo@mongo:27017"))
 	if err != nil {
 		log.Fatal(err)
 	}
